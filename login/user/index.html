@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/crud/img/favicon.ico">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="modal-loading" class="modal-loader">
+        <img src="/crud/img/loader.gif" class="loader" alt="loader" />
+    </div>
+    <div class="page">
+        <div class="formLogin">
+            <p style="text-align:center;"><img src="/crud/img/favicon.ico" style="height:40px;"/></p>
+            <h1>Meu Sistema CRUD</h1>
+            <p>Atualize seu usuário abaixo.</p>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" autofocus="true" />
+            <label for="usuario">Usuário</label>
+            <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário" />
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite a senha" />
+            <label for="senha2">Senha</label>
+            <input type="password" id="senha2" name="senha2" placeholder="confirme a senha" />
+            <input type="button" value="Atualizar" class="btn" onclick="atualizarUsuario();"/>
+        </div>
+    </div>
+    <div id="logs" style="display:none;"></div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>

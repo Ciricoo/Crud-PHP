@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/crud/img/favicon.ico">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="modal-loading" class="modal-loader">
+        <img src="/crud/img/loader.gif" class="loader" alt="loader" />
+    </div>
+    <div class="page">
+        <div class="formLogin">
+            <p style="text-align:center;"><img src="/crud/img/favicon.ico" style="height:40px;"/></p>
+            <h1>Meu Sistema CRUD</h1>
+            <p>Digite os seus dados de acesso no campo abaixo.</p>
+            <label for="usuario">Usuário</label>
+            <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuario" autofocus="true" />
+            <label for="password">Senha</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" />
+            <input type="button" value="Acessar" class="btn" onclick="login();"/>
+        </div>
+    </div>
+    <div id="logs" style="display:none;"></div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

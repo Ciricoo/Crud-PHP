@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema em Php</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<body>
+    
+    <header>
+        <h1 class="header-title">Cadastro de Clientes</h1>
+    </header>
+    <main>
+    <div id="modal-loading" class="modal-loader">
+        <img src="images/loader.gif" class="loader" alt="loader" />
+    </div>
+    <div id="conteudo_campos">
+    <!--<input type="file" name="inputFile" id="inputFile">-->
+    
+     
+    <div id="conteudo_botoes">
+        <button type="button" class="btn zoom" style="background-color: #1FB6FF;" id="cadastrarCliente">Cadastrar Cliente</button>
+        <table class="records">
+    
+    <input type='file' id='input_imagem' name='input_imagem' accept='image/*' onchange="PreVisualizarImagem(null);">
+    <input type="button" class="btn zoom" style="background-color: #1FB6FF;" id="btnSel" value="Consultar">
+    </div>
+    <div id="conteudo"></div>
+    <div id="logs"></div>
+    <div class="modal" id="modal">
+            <div class="modal-content" style="padding: 20px;">
+                <header class="modal-header">
+                    <h2 class="modal-title-header">Novo Cliente</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form class="modal-form">
+                    <input type="text" class="inputt" id="nome" value="" placeholder="ex: João Vitor">
+                    <input type="text" class="inputt" id="sobrenome" value="" placeholder="ex: Círico">
+                    <input type="text" class="inputt" id="documento" value="" placeholder="ex: 999.999.999-99">
+                    <input type="date" class="inputt" id="data_nascimento" value="">
+
+                </form>
+                <footer class="modal-footer">
+                    <label for="input_imagem">
+        <div class="btn zoom" id="btnimagem">
+            <img id="input_preview" style="max-height: 40px;display:inline;">
+            <span>Imagem</span>
+        </div>
+    </label>
+                    <input type="button" class="btn zoom" style="background-color: #1FB6FF;" id="btnIns" value="Inserir Novo">
+                    
+                </footer>
+            </div>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+
